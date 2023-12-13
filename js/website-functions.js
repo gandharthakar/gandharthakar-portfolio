@@ -1,3 +1,20 @@
+
+function reduce_header_on_scroll() {
+    let minpos = 50;
+    let winTop = $(window).scrollTop();
+    let header = $('.js-hdrotr');
+
+    if(winTop > minpos) {
+        header.addClass('minipad');
+    } else {
+        header.removeClass('minipad');
+    }
+}
+
+$(window).on('scroll', function(){
+    reduce_header_on_scroll();
+});
+
 $(function(){
 
     $('.js-menu-toggle').on('click', function(){

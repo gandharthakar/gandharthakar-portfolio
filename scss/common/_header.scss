@@ -7,6 +7,7 @@
     background-color: $secondary_color;
     padding: 50px 50px;
     z-index: 20;
+    transition: 0.5s;
     &.minipad {
         padding: 25px 50px;
     }
