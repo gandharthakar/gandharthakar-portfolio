@@ -9,3 +9,13 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+/* Site Common Things. */
+
+// Import Header
+@import './common/header';
+
+/* ---- All Sections ---- */
+
+// Import Home Banner
+@import './sections/home-banner';

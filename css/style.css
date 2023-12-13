@@ -10,4 +10,251 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Site Common Things. */
+.site-header-outer {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  background-color: #041940;
+  padding: 50px 50px;
+  z-index: 20;
+}
+.site-header-outer.minipad {
+  padding: 25px 50px;
+}
+
+.header-main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 10px 30px;
+}
+
+.logo-cont .text-1, .logo-cont .text-2 {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+.logo-cont .text-1 {
+  color: #52FF00;
+}
+.logo-cont .text-2 {
+  color: #ffffff;
+}
+.logo-cont .link {
+  text-decoration: none;
+}
+.logo-cont .link:hover, .logo-cont .link:active {
+  text-decoration: none;
+}
+
+.mobbtn-tglcnt {
+  display: none;
+}
+.mobbtn-tglcnt .mobbtn {
+  display: inline-block;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  padding: 0px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+       -o-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+.mobbtn-tglcnt .mobbtn:hover, .mobbtn-tglcnt .mobbtn:active {
+  text-decoration: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+.mobbtn-tglcnt .mobbtn .btnbase {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.mobbtn-tglcnt .mobbtn .base-bar {
+  display: block;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 6px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.mobbtn-tglcnt .mobbtn .base-bar-1 {
+  width: 20px;
+}
+.mobbtn-tglcnt .mobbtn .base-bar-3 {
+  width: 20px;
+  margin-left: auto;
+  margin-bottom: 0px;
+}
+.mobbtn-tglcnt .mobbtn.active .base-bar-1 {
+  width: auto;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+       -o-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(45deg) translate(1px, -4px);
+      -ms-transform: rotate(45deg) translate(1px, -4px);
+       -o-transform: rotate(45deg) translate(1px, -4px);
+          transform: rotate(45deg) translate(1px, -4px);
+}
+.mobbtn-tglcnt .mobbtn.active .base-bar-2 {
+  opacity: 0;
+}
+.mobbtn-tglcnt .mobbtn.active .base-bar-3 {
+  width: auto;
+  margin-left: 0px;
+  -webkit-transform: rotate(-45deg) translate(5px, -6px);
+      -ms-transform: rotate(-45deg) translate(5px, -6px);
+       -o-transform: rotate(-45deg) translate(5px, -6px);
+          transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.site-navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 5px 55px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.site-navigation .nav-link {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.site-navigation .nav-link:hover, .site-navigation .nav-link:active, .site-navigation .nav-link.active {
+  text-decoration: none;
+  background-color: transparent;
+  color: #52FF00;
+}
+.site-navigation li.active .nav-link {
+  text-decoration: none;
+  background-color: transparent;
+  color: #52FF00;
+}
+
+@media (max-width: 1200px) {
+  .site-header-outer {
+    padding: 50px 20px;
+  }
+  .site-header-outer.minipad {
+    padding: 25px 20px;
+  }
+}
+@media (max-width: 991px) {
+  .site-header-outer {
+    padding: 25px 20px;
+  }
+  .logo-cont .text-1, .logo-cont .text-2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .mobbtn-tglcnt {
+    display: inline-block;
+  }
+  .site-main-nav {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 94px;
+    width: 100%;
+    background-color: #041940;
+  }
+  .site-navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0px 20px 30px 20px;
+    gap: 10px 0px;
+  }
+  .site-navigation .nav-link {
+    font-size: 18px;
+  }
+}
+/* ---- All Sections ---- */
+
 /*# sourceMappingURL=style.css.map */

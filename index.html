@@ -26,12 +26,64 @@
         <!-- Site Stylesheet -->
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
-    <body>
+    <body id="home">
         
-        <h1>Hello World</h1>
+        <div class="site-header-outer">
+            <header class="header-main">
+                <div class="logo-cont">
+                    <a href="#home" title="Home" class="link">
+                        <div class="text-1">Gandhar</div>
+                        <div class="text-2">Thakar</div>
+                    </a>
+                </div>
+
+                <div>
+                    <!-- Mobile Menu Toggle Button -->
+                    <div class="mobbtn-tglcnt">
+                        <button type="button" title="Toggle Menu" class="mobbtn js-menu-toggle">
+                            <div class="btnbase">
+                                <div class="base-bar base-bar-1"></div>
+                                <div class="base-bar base-bar-2"></div>
+                                <div class="base-bar base-bar-3"></div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <nav class="site-main-nav js-nav">
+                        <ul class="site-navigation">
+                            <li>
+                                <a href="#home" title="Home" class="nav-link active">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about-me" title="About Me" class="nav-link">
+                                    About Me
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#my-skills" title="My Skills" class="nav-link">
+                                    My Skills
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#my-work" title="My Work" class="nav-link">
+                                    My Work
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" title="Contact" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
 
         <!-- All Scripts -->
-        <link rel="stylesheet" href="js/jquery-3.7.1.min.js" />
-        <link rel="stylesheet" href="js/website-functions.js" />
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/website-functions.js"></script>
     </body>
 </html>
