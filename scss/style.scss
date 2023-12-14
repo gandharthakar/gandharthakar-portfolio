@@ -12,6 +12,9 @@ body {
 
 /* Site Common Things. */
 
+// Import Common Styles
+@import './common/common';
+
 // Import Header
 @import './common/header';
 
@@ -22,3 +25,6 @@ body {
 
 // Import Home Banner
 @import './sections/home-banner';
+
+// Import About Me Section
+@import './sections/about-me-section';

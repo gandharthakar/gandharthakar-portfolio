@@ -152,6 +152,7 @@
 @media (max-width: 767px) {
     .home-banner-outer {
         padding: 100px 20px 40px 20px;
+        min-height: calc(100vh - 50px);
     }
     .hbtext-1 {
         font-size: 22px;

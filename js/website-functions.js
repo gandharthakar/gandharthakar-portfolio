@@ -17,6 +17,10 @@ $(window).on('scroll', function(){
 
 $(function(){
 
+    // Set Footer Year.
+    let year = new Date().getFullYear();
+    $("#footer-year").text(year);
+
     $('.js-menu-toggle').on('click', function(){
         let menu = $('.js-nav');
         let isMenuOpened = $(this).hasClass('active');

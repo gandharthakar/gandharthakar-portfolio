@@ -1,0 +1,86 @@
+
+// Common Site Title Style 1
+
+.common-title-s1 {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    .common-title-s1 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 767px) {
+    .common-title-s1 {
+        font-size: 24px;
+    }
+}
+
+// Common Site Description Text Style 1
+
+.common-dscrtxt-s2 {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    & p {
+        display: block;
+        margin: 0px;
+        padding: 0px 0px 20px 0px;
+        color: #000000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:last-child {
+            padding: 0px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .common-dscrtxt-s2 {
+        font-size: 18px;
+        & p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .common-dscrtxt-s2 {
+        font-size: 16px;
+        & p {
+            font-size: 16px;
+        }
+    }
+}
+
+// Site theme color classe
+
+.text-color-st1 {
+    color: $primary_color;
+}
+
+.text-color-st2 {
+    color: $secondary_color;
+}
+
+.fill-st1 {
+    fill: $primary_color;
+}
+
+.fill-st2 {
+    fill: $secondary_color;
+}
