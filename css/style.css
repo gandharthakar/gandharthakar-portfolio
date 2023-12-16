@@ -28,7 +28,7 @@ body {
 }
 @media (max-width: 767px) {
   .common-title-s1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 .common-dscrtxt-s2 {
@@ -202,7 +202,7 @@ body {
 .mobbtn-tglcnt .mobbtn .base-bar {
   display: block;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #52FF00;
   margin-bottom: 6px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -611,17 +611,18 @@ body {
     min-height: calc(100vh - 50px);
   }
   .hbtext-1 {
-    font-size: 22px;
+    font-size: 28px;
+    line-height: 35px;
   }
   .hbtext-2 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .hbpad-1 {
     padding-bottom: 12px;
   }
   .hbpad-2 {
     max-width: 500px;
-    padding-bottom: 12px;
+    padding-bottom: 18px;
   }
   .hbcta-flxcont .ctapad {
     padding-right: 25px;
@@ -910,11 +911,477 @@ body {
 }
 @media (max-width: 767px) {
   .abtsec-ttladj {
-    line-height: 35px;
+    line-height: 42px;
   }
   .asbtxt {
     font-size: 50px;
     line-height: 45px;
+  }
+}
+.my-skilsec-outer {
+  background-color: #041940;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.my-skilsec-outer .inner-container {
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  z-index: 4;
+}
+
+.mysksec-pad-2 {
+  max-width: 695px;
+}
+
+.mysksec-dscadj {
+  color: #ffffff;
+}
+.mysksec-dscadj p {
+  color: #ffffff;
+}
+
+.msklsec-fpos {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+
+.msklsec-fgrow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 5px 65px;
+}
+
+.msklsec-flbtn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 0px;
+  margin: 0px;
+  border: 0px;
+  background-color: #041940;
+  color: #52FF00;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.msklsec-flbtn .str, .msklsec-flbtn .svg-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.msklsec-flbtn .str {
+  padding-left: 10px;
+}
+.msklsec-flbtn .svg-icon {
+  width: 30px;
+  height: 27px;
+}
+.msklsec-flbtn:hover, .msklsec-flbtn:active {
+  text-decoration: none;
+  background-color: #041940;
+  color: #52FF00;
+}
+
+.msklsec-flmenu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 5px 55px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.msklsec-flmenu .nav-link {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.msklsec-flmenu .nav-link:hover, .msklsec-flmenu .nav-link:active, .msklsec-flmenu .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  background-color: transparent;
+  color: #52FF00;
+}
+.msklsec-flmenu li.active .nav-link {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  background-color: transparent;
+  color: #52FF00;
+}
+
+.mssc-main {
+  padding-left: 100px;
+  position: relative;
+  z-index: 4;
+}
+
+.skl-slitem {
+  width: 350px;
+  margin-right: 50px;
+  padding-bottom: 20px;
+}
+
+.skills-box-outer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid #52FF00;
+  background-color: #041940;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.skills-box-outer::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #52FF00;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.skbh-pad {
+  padding: 22px 25px 40px 25px;
+}
+
+.skb-header {
+  display: block;
+  margin: 0px;
+  padding: 0px 30px 0px 0px;
+  color: #52FF00;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.skb-header::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #52FF00;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sbprg-pad {
+  padding: 0px 25px 25px 25px;
+}
+
+.sbprg-legtxt {
+  display: block;
+  margin: 0px;
+  padding: 0px 0px 7px 0px;
+  text-align: right;
+  color: #52FF00;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sbprog-track {
+  display: block;
+  width: 100%;
+  height: 12px;
+  position: relative;
+  border: 2px solid #52FF00;
+  background: transparent;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.sbprog-track .skill-progress {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  background-color: #52FF00;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sbtag-pad {
+  border-top: 2px solid #52FF00;
+  padding: 15px 25px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sbtag-grow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sbtag-chip {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #52FF00;
+  color: #041940;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.skills-box-outer.box-hover-true:hover {
+  background-color: #52FF00;
+  border-color: #041940;
+}
+.skills-box-outer.box-hover-true:hover .skb-header {
+  color: #041940;
+}
+.skills-box-outer.box-hover-true:hover .skb-header::after {
+  background-color: #041940;
+}
+.skills-box-outer.box-hover-true:hover .sbprg-legtxt {
+  color: #041940;
+}
+.skills-box-outer.box-hover-true:hover .sbprog-track {
+  border-color: #041940;
+}
+.skills-box-outer.box-hover-true:hover .sbprog-track .skill-progress {
+  background-color: #041940;
+}
+.skills-box-outer.box-hover-true:hover .sbtag-pad {
+  border-color: #041940;
+}
+.skills-box-outer.box-hover-true:hover .sbtag-chip {
+  background-color: #041940;
+  color: #52FF00;
+}
+.skills-box-outer.active {
+  background-color: #52FF00;
+  border-color: #041940;
+}
+.skills-box-outer.active .skb-header {
+  color: #041940;
+}
+.skills-box-outer.active .skb-header::after {
+  background-color: #041940;
+}
+.skills-box-outer.active .sbprg-legtxt {
+  color: #041940;
+}
+.skills-box-outer.active .sbprog-track {
+  border-color: #041940;
+}
+.skills-box-outer.active .sbprog-track .skill-progress {
+  background-color: #041940;
+}
+.skills-box-outer.active .sbtag-pad {
+  border-color: #041940;
+}
+.skills-box-outer.active .sbtag-chip {
+  background-color: #041940;
+  color: #52FF00;
+}
+
+.myskbt-pos {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.myskbt-main {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 190px;
+}
+
+@media (max-width: 1550px) {
+  .msklsec-fgrow {
+    gap: 5px 45px;
+  }
+  .msklsec-flmenu {
+    gap: 5px 35px;
+  }
+}
+@media (max-width: 1400px) {
+  .msklsec-flbtn {
+    font-size: 20px;
+  }
+  .msklsec-flbtn .svg-icon {
+    width: 25px;
+    height: 26px;
+  }
+  .msklsec-flmenu .nav-link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .my-skilsec-outer .inner-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mssc-main {
+    padding-left: 20px;
+  }
+  .myskbt-main {
+    font-size: 100px;
+    line-height: 130px;
+  }
+  .msklsec-flmenu .nav-link {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .my-skilsec-outer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .msklsec-fpos {
+    padding-top: 35px;
+  }
+  .skl-slitem {
+    margin-right: 25px;
+  }
+  .skills-box-outer::after {
+    left: 7px;
+    top: 7px;
+  }
+  .msklsec-flmenu .nav-link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .mysksec-pad-1 {
+    padding-bottom: 5px;
+  }
+  .msklsec-flmenu {
+    gap: 7px 20px;
+  }
+  .msklsec-flmenu .nav-link {
+    font-size: 14px;
+  }
+  .skl-slitem {
+    width: 260px;
+    margin-right: 20px;
+    padding-bottom: 0px;
+  }
+  .skills-box-outer::after {
+    display: none;
+  }
+  .skbh-pad {
+    padding: 15px 15px 30px 15px;
+  }
+  .skb-header {
+    font-size: 20px;
+  }
+  .skb-header::after {
+    width: 10px;
+    height: 10px;
+  }
+  .sbprg-pad {
+    padding: 0px 15px 20px 15px;
+  }
+  .sbprg-legtxt {
+    font-size: 14px;
+    padding: 0px 0px 5px 0px;
+  }
+  .sbprog-track {
+    height: 8px;
+  }
+  .sbtag-pad {
+    padding: 10px 15px;
+  }
+  .sbtag-chip {
+    padding: 2px 8px;
+    font-size: 14px;
+  }
+  .myskbt-main {
+    font-size: 50px;
+    line-height: 65px;
   }
 }
 

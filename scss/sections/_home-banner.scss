@@ -155,17 +155,18 @@
         min-height: calc(100vh - 50px);
     }
     .hbtext-1 {
-        font-size: 22px;
+        font-size: 28px;
+        line-height: 35px;
     }
     .hbtext-2 {
-        font-size: 14px;
+        font-size: 16px;
     }
     .hbpad-1 {
         padding-bottom: 12px;
     }
     .hbpad-2 {
         max-width: 500px;
-        padding-bottom: 12px;
+        padding-bottom: 18px;
     }
     .hbcta-flxcont {
         & .ctapad {

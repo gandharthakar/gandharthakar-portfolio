@@ -1,0 +1,430 @@
+.my-skilsec-outer {
+    background-color: $secondary_color;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    & .inner-container {
+        padding-left: 100px;
+        padding-right: 100px;
+        position: relative;
+        z-index: 4;
+    }
+}
+
+.mysksec-pad-2 {
+    max-width: 695px;
+}
+
+.mysksec-dscadj {
+    color: #ffffff;
+    & p {
+        color: #ffffff;
+    }
+}
+
+.msklsec-fpos {
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 40px;
+}
+
+.msklsec-fgrow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px 65px;
+}
+
+.msklsec-flbtn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: $secondary_color;
+    color: $primary_color;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: 0.5s;
+    & .str, & .svg-icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    & .str {
+        padding-left: 10px;
+    }
+    & .svg-icon {
+        width: 30px;
+        height: 27px;
+    }
+    &:hover, &:active {
+        text-decoration: none;
+        background-color: $secondary_color;
+        color: $primary_color;
+    }
+}
+
+.msklsec-flmenu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px 55px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    & .nav-link {
+        display: inline-block;
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 0px;
+        transition: 0.5s;
+        &:hover, &:active, &.active {
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            background-color: transparent;
+            color: $primary_color;
+        }
+    }
+    & li {
+        &.active {
+            & .nav-link {
+                text-decoration: underline;
+                text-underline-offset: 6px;
+                background-color: transparent;
+                color: $primary_color;
+            }
+        }
+    }
+}
+
+.mssc-main {
+    padding-left: 100px;
+    position: relative;
+    z-index: 4;
+}
+
+.skl-slitem {
+    width: 350px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+}
+
+.skills-box-outer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $primary_color;
+    background-color: $secondary_color;
+    // box-shadow: 15px 15px 0px 0px $primary_color;
+    position: relative;
+    transition: 0.5s;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 13px;
+        top: 13px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid $primary_color;
+        z-index: -1;
+        transition: 0.5s;
+    }
+}
+
+.skbh-pad {
+    padding: 22px 25px 40px 25px;
+}
+
+.skb-header {
+    display: block;
+    margin: 0px;
+    padding: 0px 30px 0px 0px;
+    color: $primary_color;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    transition: 0.5s;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        width: 15px;
+        height: 15px;
+        background-color: $primary_color;
+        border-radius: 50px;
+        transition: 0.5s;
+    }
+}
+
+.sbprg-pad {
+    padding: 0px 25px 25px 25px;
+}
+
+.sbprg-legtxt {
+    display: block;
+    margin: 0px;
+    padding: 0px 0px 7px 0px;
+    text-align: right;
+    color: $primary_color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.5s;
+}
+
+.sbprog-track {
+    display: block;
+    width: 100%;
+    height: 12px;
+    position: relative;
+    border: 2px solid $primary_color;
+    background: transparent;
+    transition: 0.5s;
+    & .skill-progress {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        background-color: $primary_color;
+        transition: 0.5s;
+    }
+}
+
+.sbtag-pad {
+    border-top: 2px solid $primary_color;
+    padding: 15px 25px;
+    transition: 0.5s;
+}
+
+.sbtag-grow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sbtag-chip {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: $primary_color;
+    color: $secondary_color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.5s;
+}
+
+.skills-box-outer {
+    &.box-hover-true {
+        &:hover {
+            background-color: $primary_color;
+            border-color: $secondary_color;
+            & .skb-header {
+                color: $secondary_color;
+                &::after {
+                    background-color: $secondary_color;
+                }
+            }
+            & .sbprg-legtxt {
+                color: $secondary_color;
+            }
+            & .sbprog-track {
+                border-color: $secondary_color;
+                & .skill-progress {
+                    background-color: $secondary_color;
+                }
+            }
+            & .sbtag-pad {
+                border-color: $secondary_color;
+            }
+            & .sbtag-chip {
+                background-color: $secondary_color;
+                color: $primary_color;
+            }
+        }
+    }
+    &.active {
+        background-color: $primary_color;
+        border-color: $secondary_color;
+        & .skb-header {
+            color: $secondary_color;
+            &::after {
+                background-color: $secondary_color;
+            }
+        }
+        & .sbprg-legtxt {
+            color: $secondary_color;
+        }
+        & .sbprog-track {
+            border-color: $secondary_color;
+            & .skill-progress {
+                background-color: $secondary_color;
+            }
+        }
+        & .sbtag-pad {
+            border-color: $secondary_color;
+        }
+        & .sbtag-chip {
+            background-color: $secondary_color;
+            color: $primary_color;
+        }
+    }
+}
+
+.myskbt-pos {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.myskbt-main {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.20);
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 190px;
+}
+
+@media (max-width: 1550px) {
+    .msklsec-fgrow {
+        gap: 5px 45px;
+    }
+    .msklsec-flmenu {
+        gap: 5px 35px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .msklsec-flbtn {
+        font-size: 20px;
+        & .svg-icon {
+            width: 25px;
+            height: 26px;
+        }
+    }
+    .msklsec-flmenu {
+        & .nav-link {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .my-skilsec-outer {
+        & .inner-container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .mssc-main {
+        padding-left: 20px;
+    }
+    .myskbt-main {
+        font-size: 100px;
+        line-height: 130px;
+    }
+    .msklsec-flmenu {
+        & .nav-link {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .my-skilsec-outer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .msklsec-fpos {
+        padding-top: 35px;
+    }
+    .skl-slitem {
+        margin-right: 25px;
+    }
+    .skills-box-outer {
+        &::after {
+            left: 7px;
+            top: 7px;
+        }
+    }
+    .msklsec-flmenu {
+        & .nav-link {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .mysksec-pad-1 {
+        padding-bottom: 5px;
+    }
+    .msklsec-flmenu {
+        gap: 7px 20px;
+        & .nav-link {
+            font-size: 14px;
+        }
+    }
+    .skl-slitem {
+        width: 260px;
+        margin-right: 20px;
+        padding-bottom: 0px;
+    }
+    .skills-box-outer {
+        &::after {
+            display: none;
+        }
+    }
+    .skbh-pad {
+        padding: 15px 15px 30px 15px;
+    }
+    .skb-header {
+        font-size: 20px;
+        &::after {
+            width: 10px;
+            height: 10px;
+        }
+    }
+    .sbprg-pad {
+        padding: 0px 15px 20px 15px;
+    }
+    .sbprg-legtxt {
+        font-size: 14px;
+        padding: 0px 0px 5px 0px;
+    }
+    .sbprog-track {
+        height: 8px;
+    }
+    .sbtag-pad {
+        padding: 10px 15px;
+    }
+    .sbtag-chip {
+        padding: 2px 8px;
+        font-size: 14px;
+    }
+    .myskbt-main {
+        font-size: 50px;
+        line-height: 65px;
+    }
+}

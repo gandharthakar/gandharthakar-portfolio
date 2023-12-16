@@ -38,4 +38,28 @@ $(function(){
         }
     });
 
+    // Init Skill Slider
+    let skill_slider = new Swiper('.js-skills-slider', {
+        slidesPerView: "auto",
+    });
+
+    // Filter Skills.
+    $('.js-filter-skills').on('click', function(){
+        let all_links = $('.js-filter-skills');
+        $(all_links).removeClass('active');
+        $(this).addClass('active');
+
+        let filter = $(this).attr('data-show-panel');
+        $('.js-skills-slider .swiper-slide').css('display', 'none');
+        $('.js-skills-slider .swiper-slide' + filter).css('display', '');
+        skill_slider.updateSize();
+        skill_slider.updateSlides();
+        skill_slider.updateProgress();
+        skill_slider.updateSlidesClasses();
+        skill_slider.slideTo(0);
+        skill_slider.scrollbar.updateSize();
+
+        return false;
+    });
+
 }); // End of $( document ).ready() Function.
