@@ -1,0 +1,372 @@
+.my-worksec-outer {
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    & .inner-container {
+        padding-left: 100px;
+        padding-right: 100px;
+        position: relative;
+        z-index: 4;
+    }
+}
+
+.mywksec-pad-2 {
+    max-width: 695px;
+    padding-bottom: 35px;
+}
+
+.mywkdscrtxt-adj {
+    color: $secondary_color;
+    & p {
+        color: $secondary_color;
+    }
+}
+
+.mywksec-pad-3 {
+    padding-bottom: 35px;
+}
+
+.mywks-tab-switcher {
+    display: flex;
+    background-color: #ffffff;
+    border: 2px solid $secondary_color;
+    box-shadow: 5px 5px 0px 0px $secondary_color;
+    max-width: 272px;
+}
+
+.mywks-tabs {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px;
+    border: 0px;
+    padding: 8px 20px;
+    background-color: transparent;
+    color: $secondary_color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    border-right: 2px solid $secondary_color;
+    border-radius: 0px;
+    transition: 0.5s;
+    &:last-child {
+        border-right: 0px;
+    }
+    &:hover, &:active, &.active {
+        text-decoration: none;
+        background-color: $primary_color;
+        color: $secondary_color;
+    }
+}
+
+.work-panel {
+    display: none;
+}
+
+.wpsldr-cont {
+    padding-left: 100px;
+    position: relative;
+    z-index: 4;
+}
+
+.cpwsc-cont {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    z-index: 4;
+}
+
+.cpmwk-sldr {
+    & .swiper-slide {
+        width: 300px;
+        margin-right: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+.cpwsc-sldrgrd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px 20px;
+}
+
+.cpwsc-btn {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid $secondary_color;
+    background-color: transparent;
+    color: $secondary_color;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.5s;
+    & .svg-icon {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        margin-top: 2px;
+    }
+    & .fill {
+        fill: $secondary_color;
+        transition: 0.5s;
+    }
+    &:hover, &:active {
+        text-decoration: none;
+        background-color: $primary_color;
+        color: $secondary_color;
+        & .fill {
+            fill: $secondary_color;
+        }
+    }
+    &.disabled, &[disabled] {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.work-box-main {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $secondary_color;
+    background-color: #FFFFFF;
+    box-shadow: 7px 7px 0px 0px $secondary_color;
+    min-height: 310px;
+}
+
+.wbm-tar {
+    text-align: right;
+    & .number {
+        display: inline-block;
+        padding: 0px 5px;
+        min-width: 40px;
+        min-height: 40px;
+        text-align: center;
+        background-color: $secondary_color;
+        color: $primary_color;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        & .str {
+            display: inline-block;
+            margin-top: 5px;
+        }
+    }
+}
+
+.work-box-tag-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px 15px;
+    list-style: none;
+    & li {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        color: $secondary_color;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        & .dot {
+            display: inline-block;
+            margin: 0px 7px;
+            width: 2px;
+            height: 2px;
+            background-color: $secondary_color;
+            border-radius: 10px;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+.wbox-pad-1 {
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.wbox-pad-2 {
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.work-project-name {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    color: $secondary_color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.work-description {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.wbfoot-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 15px;
+    border-top: 2px solid $secondary_color;
+    margin-top: auto;
+}
+
+.wb-visit-link {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    color: $secondary_color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 0px;
+    transition: 0.5s;
+    &:hover, &:active {
+        text-decoration: none;
+        background-color: transparent;
+        color: $secondary_color;
+    }
+}
+
+.wp-licont {
+    & .svg-icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        transform: translateY(2px);
+    }
+}
+
+.mywksbt-pos {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.mywksbt-main {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    color: rgba(4, 25, 64, 0.20);
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 260px;
+}
+
+@media (max-width: 1200px) {
+    .my-worksec-outer {
+        & .inner-container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .wpsldr-cont {
+        padding-left: 20px;
+    }
+    .cpwsc-cont {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mywksbt-main {
+        font-size: 100px;
+        line-height: 130px;
+    }
+}
+
+@media (max-width: 991px) {
+    .my-worksec-outer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mywksec-pad-1 {
+        padding-bottom: 5px;
+    }
+    .mywks-tab-switcher {
+        max-width: 245px;
+    }
+    .mywks-tabs {
+        padding: 8px 18px;
+        font-size: 18px;
+    }
+    .cpmwk-sldr {
+        & .swiper-slide {
+            width: 260px;
+            margin-right: 20px;
+        }
+    }
+    .cpwsc-cont {
+        padding-top: 5px;
+    }
+    .cpwsc-sldrgrd {
+        gap: 5px 10px;
+    }
+    .cpwsc-btn {
+        width: 40px;
+        height: 40px;
+        & .svg-icon {
+            width: 22px;
+            height: 22px;
+            margin-top: 3px;
+        }
+    }
+    .wbm-tar {
+        & .number {
+            min-width: 35px;
+            min-height: 35px;
+            font-size: 18px;
+            & .str {
+                margin-top: 2px;
+            }
+        }
+    }
+    .work-project-name {
+        font-size: 18px;
+    }
+    .wbox-pad-2 {
+        padding-bottom: 20px;
+    }
+    .work-description {
+        font-size: 12px;
+    }
+    .wb-visit-link {
+        font-size: 16px;
+    }
+    .mywksbt-main {
+        font-size: 50px;
+        line-height: 65px;
+    }
+}

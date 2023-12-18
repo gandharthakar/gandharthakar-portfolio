@@ -21,6 +21,7 @@ $(function(){
     let year = new Date().getFullYear();
     $("#footer-year").text(year);
 
+    // Mobile Menu Toggle Menu
     $('.js-menu-toggle').on('click', function(){
         let menu = $('.js-nav');
         let isMenuOpened = $(this).hasClass('active');
@@ -43,7 +44,7 @@ $(function(){
         slidesPerView: "auto",
     });
 
-    // Filter Skills.
+    // Filter Skills items.
     $('.js-filter-skills').on('click', function(){
         let all_links = $('.js-filter-skills');
         $(all_links).removeClass('active');
@@ -60,6 +61,34 @@ $(function(){
         skill_slider.scrollbar.updateSize();
 
         return false;
+    });
+
+    // CHange Work Tabs On Click.
+    $('.js-work-tabs').on('click', function(){
+        $('.js-work-tabs').removeClass('active');
+        $(this).addClass('active');
+
+        $('.js-work-panel').hide();
+        let curr_panel = $(this).attr("data-show-panel");
+        $(curr_panel).fadeIn();
+    });
+
+    // Init Commercial Slider
+    let cw_slider = new Swiper('.js-work-slider-cm', {
+        slidesPerView: "auto",
+        navigation: {
+            prevEl: ".js-cwsc-prev",
+            nextEl: ".js-cwsc-next",
+        },
+    });
+
+    // Init Personal Slider
+    let pw_slider = new Swiper('.js-work-slider-pr', {
+        slidesPerView: "auto",
+        navigation: {
+            prevEl: ".js-pwsc-prev",
+            nextEl: ".js-pwsc-next",
+        },
     });
 
 }); // End of $( document ).ready() Function.
