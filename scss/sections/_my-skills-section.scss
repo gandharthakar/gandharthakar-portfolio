@@ -4,7 +4,7 @@
     overflow: hidden;
     min-height: 100vh;
     padding-top: 110px;
-    padding-bottom: 110px;
+    padding-bottom: 190px;
     & .inner-container {
         padding-left: 100px;
         padding-right: 100px;
@@ -115,6 +115,12 @@
     padding-left: 100px;
     position: relative;
     z-index: 4;
+}
+
+.mssc-main-scc {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .skl-slitem {
@@ -307,6 +313,55 @@
     line-height: 190px;
 }
 
+.mysklsldr-cntrlrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.mysklsldr-cntrl-btn {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid $primary_color;
+    background-color: transparent;
+    color: $primary_color;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.5s;
+    & .svg-icon {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        margin-top: 2px;
+    }
+    & .fill {
+        fill: $primary_color;
+        transition: 0.5s;
+    }
+    &:hover, &:active {
+        text-decoration: none;
+        background-color: $primary_color;
+        color: $secondary_color;
+        & .fill {
+            fill: $secondary_color;
+        }
+    }
+    &.disabled, &[disabled] {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+
 @media (max-width: 1550px) {
     .msklsec-fgrow {
         gap: 5px 45px;
@@ -340,6 +395,10 @@
     }
     .mssc-main {
         padding-left: 20px;
+    }
+    .mssc-main-scc {
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .myskbt-main {
         font-size: 100px;
@@ -426,5 +485,14 @@
     .myskbt-main {
         font-size: 50px;
         line-height: 65px;
+    }
+    .mysklsldr-cntrl-btn {
+        width: 40px;
+        height: 40px;
+        & .svg-icon {
+            width: 22px;
+            height: 22px;
+            margin-top: 3px;
+        }
     }
 }

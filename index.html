@@ -54,9 +54,9 @@
                     </div>
 
                     <nav class="site-main-nav js-nav">
-                        <ul class="site-navigation">
-                            <li>
-                                <a href="#home" title="Home" class="nav-link active">
+                        <ul class="site-navigation" id="site-nav">
+                            <li class="active">
+                                <a href="#home" title="Home" class="nav-link">
                                     Home
                                 </a>
                             </li>
@@ -102,7 +102,7 @@
             <div>
                 <div class="hbcta-flxcont">
                     <div class="ctapad">
-                        <a href="#" title="Download CV" class="cta-download-cv has-icon icon-right">
+                        <a href="gandhar-thakar-cv.pdf" title="Download CV" class="cta-download-cv has-icon icon-right" download>
                             <span>
                                 Download CV
                             </span>
@@ -385,7 +385,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide skl-slitem front-end">
+                        <div class="swiper-slide skl-slitem front-end full-stack">
                             <div class="skills-box-outer box-hover-true">
                                 <div class="skbh-pad">
                                     <div class="skb-header">
@@ -403,6 +403,29 @@
                                 <div class="sbtag-pad">
                                     <div class="sbtag-grow">
                                         <div class="sbtag-chip">Front-End</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skl-slitem front-end">
+                            <div class="skills-box-outer box-hover-true">
+                                <div class="skbh-pad">
+                                    <div class="skb-header">
+                                        TypeScript
+                                    </div>
+                                </div>
+                                <div class="sbprg-pad">
+                                    <div class="sbprg-legtxt">
+                                        60%
+                                    </div>
+                                    <div class="sbprog-track">
+                                        <div class="skill-progress" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+                                <div class="sbtag-pad">
+                                    <div class="sbtag-grow">
+                                        <div class="sbtag-chip">Front-End</div>
+                                        <div class="sbtag-chip">Full-Stack</div>
                                     </div>
                                 </div>
                             </div>
@@ -747,6 +770,21 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!-- Slider Controls -->
+            <div class="mssc-main-scc">
+                <div class="mysklsldr-cntrlrow">
+                    <button type="button" title="Previous Slide" class="mysklsldr-cntrl-btn js-mysklsldr-prev">
+                        <svg class="svg-icon" width="30px" height="30px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill" fill="red" d="M 19.03125 4.28125 L 8.03125 15.28125 L 7.34375 16 L 8.03125 16.71875 L 19.03125 27.71875 L 20.46875 26.28125 L 10.1875 16 L 20.46875 5.71875 Z"/>
+                        </svg>
+                    </button>
+                    <button type="button" title="Next Slide" class="mysklsldr-cntrl-btn js-mysklsldr-next">
+                        <svg class="svg-icon" width="30px" height="30px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill" fill="red" d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 Z"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
             <!-- Big text -->
@@ -1412,6 +1450,125 @@
             <!-- Big Text -->
             <div class="mywksbt-pos">
                 <h1 class="mywksbt-main">My Work</h1>
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section class="contact-me-outer js-scroll-section" id="contact-me">
+            <div class="conme-pad-1">
+                <h1 class="common-title-s1 text-color-st1">
+                    Contact Me
+                </h1>
+            </div>
+
+            <div class="cnmesec-grid-row">
+                <div class="contact-dtlcont">
+                    <div class="contdtl-item">
+                        <div class="con-icon-box">
+                            <svg class="icon-svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="icon-stroke" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"/>
+                            </svg>
+                            <svg class="base-polygon-svg" width="50px" height="50px" viewBox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="poly-fill" fill="#ffffff" stroke="#52FF00" stroke-width="2" d="M1.34937 13.0773L22 1.1547L42.6506 13.0773V36.9226L22 48.8453L1.34937 36.9226V13.0773Z" />
+                            </svg>
+                        </div>
+                        <div class="condcm-gmain">
+                            <div class="condcm-pad-1">
+                                <h5 class="condcm-legend">Email</h5>
+                            </div>
+                            <div>
+                                <h6 class="condcm-main">
+                                    <a href="mailto:gandharthakar.3@gmail.com" title="gandharthakar.3@gmail.com">
+                                        gandharthakar.3@gmail.com
+                                    </a>
+                                    <br />
+                                    <a href="mailto:gandharthakar224@gmail.com" title="gandharthakar224@gmail.com">
+                                        gandharthakar224@gmail.com
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contdtl-item">
+                        <div class="con-icon-box">
+                            <svg class="icon-svg" width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_28_90)">
+                                    <path class="icon-stroke" stroke="#52FF00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18.16 13.5202L16.6044 11.9646C16.1919 11.5521 15.6323 11.3203 15.0489 11.3203C14.4654 11.3203 13.9059 11.5521 13.4933 11.9646L12.7155 12.7424C12.303 13.1549 11.7434 13.3867 11.16 13.3867C10.5765 13.3867 10.017 13.1549 9.60443 12.7424L7.2711 10.4091C6.85857 9.9965 6.62681 9.43696 6.62681 8.85352C6.62681 8.27008 6.85857 7.71054 7.2711 7.29796L8.04888 6.52019C8.46113 6.10747 8.6927 5.54798 8.6927 4.96463C8.6927 4.38128 8.46113 3.82179 8.04888 3.40908L6.49332 1.85352C6.30267 1.62645 6.06462 1.44386 5.79589 1.3186C5.52716 1.19333 5.23426 1.12842 4.93776 1.12842C4.64127 1.12842 4.34837 1.19333 4.07964 1.3186C3.8109 1.44386 3.57286 1.62645 3.38221 1.85352C-0.708902 5.91463 1.22221 10.6024 5.3111 14.6891C9.39999 18.7757 14.0889 20.7091 18.16 16.6357C18.3878 16.4451 18.5711 16.2068 18.6968 15.9377C18.8226 15.6685 18.8877 15.375 18.8877 15.078C18.8877 14.7809 18.8226 14.4874 18.6968 14.2183C18.5711 13.9491 18.3878 13.7108 18.16 13.5202Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_28_90">
+                                        <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg class="base-polygon-svg" width="50px" height="50px" viewBox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="poly-fill" fill="#ffffff" stroke="#52FF00" stroke-width="2" d="M1.34937 13.0773L22 1.1547L42.6506 13.0773V36.9226L22 48.8453L1.34937 36.9226V13.0773Z" />
+                            </svg>
+                        </div>
+                        <div class="condcm-gmain">
+                            <div class="condcm-pad-1">
+                                <h5 class="condcm-legend">Phone</h5>
+                            </div>
+                            <div>
+                                <h6 class="condcm-main">
+                                    +91 7208805728
+                                    <br />
+                                    +91 9137824616
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contdtl-item">
+                        <div class="con-icon-box">
+                            <svg class="icon-svg" width="20px" height="18px" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="icon-stroke" stroke="#52FF00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 8H19M16 11V5M10 4.5C10 4.95963 9.90947 5.41475 9.73358 5.83939C9.55769 6.26403 9.29988 6.64987 8.97487 6.97487C8.64987 7.29988 8.26403 7.55769 7.83939 7.73358C7.41475 7.90947 6.95963 8 6.5 8C6.04037 8 5.58525 7.90947 5.16061 7.73358C4.73597 7.55769 4.35013 7.29988 4.02513 6.97487C3.70012 6.64987 3.44231 6.26403 3.26642 5.83939C3.09053 5.41475 3 4.95963 3 4.5C3 3.57174 3.36875 2.6815 4.02513 2.02513C4.6815 1.36875 5.57174 1 6.5 1C7.42826 1 8.3185 1.36875 8.97487 2.02513C9.63125 2.6815 10 3.57174 10 4.5ZM5 11H8C9.06087 11 10.0783 11.4214 10.8284 12.1716C11.5786 12.9217 12 13.9391 12 15V17H1V15C1 13.9391 1.42143 12.9217 2.17157 12.1716C2.92172 11.4214 3.93913 11 5 11Z" />
+                            </svg>
+                            <svg class="base-polygon-svg" width="50px" height="50px" viewBox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="poly-fill" fill="#ffffff" stroke="#52FF00" stroke-width="2" d="M1.34937 13.0773L22 1.1547L42.6506 13.0773V36.9226L22 48.8453L1.34937 36.9226V13.0773Z" />
+                            </svg>
+                        </div>
+                        <div class="condcm-gmain">
+                            <div class="condcm-pad-1">
+                                <h5 class="condcm-legend">Social Media Connect</h5>
+                            </div>
+                            <div>
+                                <div class="condcm-socflx">
+                                    <div>
+                                        <a href="https://github.com/gandharthakar" title="Follow Me On Github" target="_blank">
+                                            <svg class="svg-icon" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                            <path class="fill-st1" d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.linkedin.com/in/gandhar-thakar-1b9650148/" title="Follow Me On Linkedin" target="_blank">
+                                            <svg class="svg-icon" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)" fill="#000000">
+                                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                            <path class="fill-st1" d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z" id="linkedin-[#161]"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-cont">
+                    <div class="conifrm-cont">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.243110934646!2d73.14281527603852!3d19.228233747174087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be794379fbdacc7%3A0x9cebfa86c884c147!2sChandrakiran%20Co-op%20Housing%20Society!5e0!3m2!1sen!2sin!4v1703056951221!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
         
