@@ -4,4 +4,6 @@ Hi, I am Gandhar Thakar, I am very passionate for building beautiful and user-fr
 
 I made this portfolio to showcase my work.
 
+### Portfolio URL :- [Click Here](https://gandharthakar.github.io/gandharthakar-portfolio/)
+
 ![Screenshot](https://raw.githubusercontent.com/gandharthakar/gandharthakar-portfolio/main/images/port-screenshot.jpg, "Portfolio Screenshot")

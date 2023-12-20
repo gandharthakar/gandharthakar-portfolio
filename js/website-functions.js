@@ -15,6 +15,11 @@ $(window).on('scroll', function(){
     reduce_header_on_scroll();
 });
 
+$(window).on('load', function(){
+    // Hide Preloader after page load.
+    $('.js-pre-loader').fadeOut();
+});
+
 $(function(){
 
     // Set Footer Year.
