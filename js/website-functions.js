@@ -39,6 +39,20 @@ $(function(){
         }
     });
 
+    // Menu Links Click
+    $('#site-nav li a').on('click', function(){
+        let winw = $(window).width();
+        let menu = $('.js-nav');
+        if(winw < 992) {
+            $('.js-menu-toggle').removeClass('active');
+            menu.slideUp({
+                complete: function(){
+                    menu.removeAttr('style');
+                }
+            });
+        }
+    });
+
     // Init Skill Slider
     let skill_slider = new Swiper('.js-skills-slider', {
         slidesPerView: "auto",
