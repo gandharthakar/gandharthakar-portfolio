@@ -114,6 +114,7 @@
     position: relative;
     text-align: center;
     border-radius: 50px;
+    box-shadow: 3px 3px 0px $secondary_color;
     transition: 0.5s;
     & .svg-icon {
         display: inline-block;
@@ -125,13 +126,17 @@
         fill: $secondary_color;
         transition: 0.5s;
     }
-    &:hover, &:active {
+    &:hover {
         text-decoration: none;
         background-color: $primary_color;
         color: $secondary_color;
         & .fill {
             fill: $secondary_color;
         }
+    }
+    &:active {
+        transform: translate(3px, 3px);
+        box-shadow: 0px 0px 0px $secondary_color;
     }
     &.disabled, &[disabled] {
         pointer-events: none;
@@ -146,6 +151,7 @@
     background-color: #FFFFFF;
     box-shadow: 7px 7px 0px 0px $secondary_color;
     min-height: 310px;
+    transition: 0.5s;
 }
 
 .wbm-tar {
@@ -162,6 +168,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        transition: 0.5s;
         & .str {
             display: inline-block;
             margin-top: 5px;
@@ -185,6 +192,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        transition: 0.5s;
         & .dot {
             display: inline-block;
             margin: 0px 7px;
@@ -218,6 +226,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    transition: 0.5s;
 }
 
 .work-description {
@@ -229,6 +238,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: 0.5s;
 }
 
 .wbfoot-cont {
@@ -238,6 +248,7 @@
     padding: 6px 15px;
     border-top: 2px solid $secondary_color;
     margin-top: auto;
+    transition: 0.5s;
 }
 
 .wb-visit-link {
@@ -268,6 +279,10 @@
         height: 16px;
         transform: translateY(2px);
     }
+    & .stroke {
+        stroke: $secondary_color;
+        transition: 0.5s;
+    }
 }
 
 .mywksbt-pos {
@@ -286,6 +301,44 @@
     font-style: normal;
     font-weight: 700;
     line-height: 260px;
+}
+
+.work-box-main {
+    &:hover {
+        background-color: $secondary_color;
+        box-shadow: 7px 7px 0px 0px $primary_color;
+        & .wbm-tar {
+            & .number {
+                background-color: $primary_color;
+                color: $secondary_color;
+            }
+        }
+        & .work-box-tag-list {
+            & li {
+                color: $primary_color;
+            }
+        }
+        & .work-project-name {
+            color: $primary_color;
+        }
+        & .work-description {
+            color: #ffffff;
+        }
+        & .wbfoot-cont {
+            border-top-color: $primary_color;
+        }
+        & .wb-visit-link {
+            color: $primary_color;
+            &:hover, &:active {
+                color: $primary_color;
+            }
+        }
+        & .wp-licont {
+            & .stroke {
+                stroke: $primary_color;
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {

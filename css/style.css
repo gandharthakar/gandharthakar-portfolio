@@ -1402,6 +1402,8 @@ body {
   text-align: center;
   -webkit-border-radius: 50px;
           border-radius: 50px;
+  -webkit-box-shadow: 3px 3px 0px #52FF00;
+          box-shadow: 3px 3px 0px #52FF00;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1418,13 +1420,16 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.mysklsldr-cntrl-btn:hover, .mysklsldr-cntrl-btn:active {
+.mysklsldr-cntrl-btn:hover {
   text-decoration: none;
-  background-color: #52FF00;
-  color: #041940;
 }
-.mysklsldr-cntrl-btn:hover .fill, .mysklsldr-cntrl-btn:active .fill {
-  fill: #041940;
+.mysklsldr-cntrl-btn:active {
+  -webkit-transform: translate(3px, 3px);
+      -ms-transform: translate(3px, 3px);
+       -o-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  -webkit-box-shadow: 0px 0px 0px #52FF00;
+          box-shadow: 0px 0px 0px #52FF00;
 }
 .mysklsldr-cntrl-btn.disabled, .mysklsldr-cntrl-btn[disabled] {
   pointer-events: none;
@@ -1684,6 +1689,8 @@ body {
   text-align: center;
   -webkit-border-radius: 50px;
           border-radius: 50px;
+  -webkit-box-shadow: 3px 3px 0px #041940;
+          box-shadow: 3px 3px 0px #041940;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1700,13 +1707,21 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.cpwsc-btn:hover, .cpwsc-btn:active {
+.cpwsc-btn:hover {
   text-decoration: none;
   background-color: #52FF00;
   color: #041940;
 }
-.cpwsc-btn:hover .fill, .cpwsc-btn:active .fill {
+.cpwsc-btn:hover .fill {
   fill: #041940;
+}
+.cpwsc-btn:active {
+  -webkit-transform: translate(3px, 3px);
+      -ms-transform: translate(3px, 3px);
+       -o-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  -webkit-box-shadow: 0px 0px 0px #041940;
+          box-shadow: 0px 0px 0px #041940;
 }
 .cpwsc-btn.disabled, .cpwsc-btn[disabled] {
   pointer-events: none;
@@ -1731,6 +1746,9 @@ body {
   -webkit-box-shadow: 7px 7px 0px 0px #041940;
           box-shadow: 7px 7px 0px 0px #041940;
   min-height: 310px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .wbm-tar {
@@ -1748,6 +1766,9 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .wbm-tar .number .str {
   display: inline-block;
@@ -1781,6 +1802,9 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .work-box-tag-list li .dot {
   display: inline-block;
@@ -1817,6 +1841,9 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .work-description {
@@ -1828,6 +1855,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .wbfoot-cont {
@@ -1849,6 +1879,9 @@ body {
   padding: 6px 15px;
   border-top: 2px solid #041940;
   margin-top: auto;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .wb-visit-link {
@@ -1884,6 +1917,12 @@ body {
        -o-transform: translateY(2px);
           transform: translateY(2px);
 }
+.wp-licont .stroke {
+  stroke: #041940;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
 
 .mywksbt-pos {
   position: absolute;
@@ -1901,6 +1940,37 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 260px;
+}
+
+.work-box-main:hover {
+  background-color: #041940;
+  -webkit-box-shadow: 7px 7px 0px 0px #52FF00;
+          box-shadow: 7px 7px 0px 0px #52FF00;
+}
+.work-box-main:hover .wbm-tar .number {
+  background-color: #52FF00;
+  color: #041940;
+}
+.work-box-main:hover .work-box-tag-list li {
+  color: #52FF00;
+}
+.work-box-main:hover .work-project-name {
+  color: #52FF00;
+}
+.work-box-main:hover .work-description {
+  color: #ffffff;
+}
+.work-box-main:hover .wbfoot-cont {
+  border-top-color: #52FF00;
+}
+.work-box-main:hover .wb-visit-link {
+  color: #52FF00;
+}
+.work-box-main:hover .wb-visit-link:hover, .work-box-main:hover .wb-visit-link:active {
+  color: #52FF00;
+}
+.work-box-main:hover .wp-licont .stroke {
+  stroke: #52FF00;
 }
 
 @media (max-width: 1200px) {
