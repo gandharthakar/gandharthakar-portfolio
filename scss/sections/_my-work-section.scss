@@ -201,6 +201,7 @@
             background-color: $secondary_color;
             border-radius: 10px;
             transform: translateY(-3px);
+            transition: 0.5s;
         }
     }
 }
@@ -251,6 +252,20 @@
     transition: 0.5s;
 }
 
+.wbfoot-cont-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0px 15px;
+    padding: 4px 10px;
+    border-top: 2px solid $secondary_color;
+    margin-top: auto;
+    transition: 0.5s;
+    & .mycol-1 {
+        text-align: center;
+    }
+}
+
 .wb-visit-link {
     display: inline-block;
     text-decoration: none;
@@ -269,6 +284,54 @@
         text-decoration: none;
         background-color: transparent;
         color: $secondary_color;
+    }
+}
+
+.ndep-link {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    color: $secondary_color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 0px;
+    transition: 0.5s;
+    & .innrrow {
+        display: flex;
+        align-items: center;
+        gap: 0px 5px;
+    }
+    & .svg-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+    & .icon-box {
+        height: 20px;
+    }
+    & .fill {
+        fill: $secondary_color;
+        transition: 0.5s;
+    }
+    & .stroke {
+        stroke: $secondary_color;
+        transition: 0.5s;
+    }
+    &:hover, &:active {
+        text-decoration: none;
+        background-color: transparent;
+        color: $secondary_color;
+        & .fill {
+            fill: $primary_color;
+        }
+        & .stroke {
+            stroke: $primary_color;
+        }
     }
 }
 
@@ -316,6 +379,9 @@
         & .work-box-tag-list {
             & li {
                 color: $primary_color;
+                & .dot {
+                    background-color: $primary_color;
+                }
             }
         }
         & .work-project-name {
@@ -327,8 +393,23 @@
         & .wbfoot-cont {
             border-top-color: $primary_color;
         }
+        & .wbfoot-cont-2 {
+            border-top-color: $primary_color;
+        }
         & .wb-visit-link {
             color: $primary_color;
+            &:hover, &:active {
+                color: $primary_color;
+            }
+        }
+        & .ndep-link {
+            color: $primary_color;
+            & .fill {
+                fill: $primary_color;
+            }
+            & .stroke {
+                stroke: $primary_color;
+            }
             &:hover, &:active {
                 color: $primary_color;
             }
@@ -422,5 +503,15 @@
     .mywksbt-main {
         font-size: 50px;
         line-height: 65px;
+    }
+    .ndep-link {
+        font-size: 16px;
+        & .svg-icon {
+            width: 18px;
+            height: 18px;
+        }
+        & .icon-box {
+            height: 18px;
+        }
     }
 }
