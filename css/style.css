@@ -1967,6 +1967,10 @@ body {
   line-height: 260px;
 }
 
+.mycol-pad {
+  padding-top: 5px;
+}
+
 .work-box-main:hover {
   background-color: #041940;
   -webkit-box-shadow: 7px 7px 0px 0px #52FF00;
