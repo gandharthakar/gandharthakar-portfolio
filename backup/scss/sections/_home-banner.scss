@@ -1,0 +1,210 @@
+.home-banner-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 154px 50px 90px 50px;
+    background-color: $secondary_color;
+    min-height: 100vh;
+}
+
+.hbpad-1 {
+    padding-bottom: 6px;
+}
+
+.hbtext-1 {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    & .highlight {
+        color: $primary_color;
+        font-weight: 700;
+    }
+}
+
+.hbpad-2 {
+    padding-bottom: 20px;
+    max-width: 700px;
+}
+
+.hbtext-2 {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hbcta-flxcont {
+    display: flex;
+    align-items: center;
+    gap: 7px 0px;
+    & .ctapad {
+        padding-right: 42px;
+    }
+    & .gitsvg-pad {
+        padding-right: 35px;
+    }
+    & .svg-icon {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+    }
+    & .git-iconpos {
+        transform: translateY(6px);
+    }
+    & .link-iconpos {
+        transform: translateY(4px);
+    }
+}
+
+.cta-download-cv {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 20px;
+    margin: 0px;
+    border: 2px solid $primary_color;
+    background-color: $secondary_color;
+    color: #ffffff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 0px;
+    box-shadow: 5px 5px 0px 0px $primary_color;
+    transition: 0.5s;
+    &.has-icon {
+        position: relative;
+    }
+    & .svg-icon {
+        display: inline-block;
+        width: 24px;
+        height: 28px;
+        position: absolute;
+        left: 0px;
+        top: 9px;
+    }
+    & .fill {
+        fill: $primary_color;
+        transition: 0.5s;
+    }
+    & .stroke {
+        stroke: $primary_color;
+        transition: 0.5s;
+    }
+    &.icon-right {
+        padding: 8px 60px 8px 20px;
+        & .svg-icon {
+            left: auto;
+            right: 20px;
+        }
+    }
+    &.icon-left {
+        padding: 8px 20px 8px 60px;
+        & .svg-icon {
+            left: 20px;
+        }
+    }
+    &:hover {
+        text-decoration: none;
+        // background-color: $primary_color;
+        // color: $secondary_color;
+        // & .fill {
+        //     fill: $secondary_color;
+        // }
+        // & .stroke {
+        //     stroke: $secondary_color;
+        // }
+        background-color: $secondary_color;
+        color: #ffffff;
+    }
+    &:active {
+        transform: translate(5px, 5px);
+        box-shadow: 0px 0px 0px 0px $primary_color;
+    }
+}
+
+@media (max-width: 1200px) {
+    .home-banner-outer {
+        padding: 154px 20px 50px 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .home-banner-outer {
+        padding: 100px 20px 50px 20px;
+    }
+    .hbtext-1 {
+        font-size: 44px;
+    }
+    .hbtext-2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-banner-outer {
+        padding: 100px 20px 40px 20px;
+        min-height: calc(100vh - 50px);
+    }
+    .hbtext-1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .hbtext-2 {
+        font-size: 16px;
+    }
+    .hbpad-1 {
+        padding-bottom: 12px;
+    }
+    .hbpad-2 {
+        max-width: 500px;
+        padding-bottom: 18px;
+    }
+    .hbcta-flxcont {
+        & .ctapad {
+            padding-right: 25px;
+        }
+        & .gitsvg-pad {
+            padding-right: 20px;
+        }
+        & .svg-icon {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .cta-download-cv {
+        padding: 5px 15px;
+        font-size: 14px;
+        box-shadow: 3px 3px 0px 0px $primary_color;
+        & .svg-icon {
+            width: 18px;
+            height: 35px;
+            top: 1px;
+        }
+        &.icon-right {
+            padding: 8px 55px 8px 20px;
+            & .svg-icon {
+                left: auto;
+                right: 18px;
+            }
+        }
+        &.icon-left {
+            padding: 8px 20px 8px 55px;
+            & .svg-icon {
+                left: 18px;
+            }
+        }
+        &:active {
+            transform: translate(3px, 3px);
+            box-shadow: 0px 0px 0px 0px $primary_color;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.site-footer {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.sfpad-1 {
+    padding-bottom: 12px;
+}
+
+.sftext-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    & .highlight {
+        font-weight: 600;
+    }
+    & .svg-icon {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        margin: 0px 10px;
+    }
+}
+
+.sftext-2 {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width: 991px) {
+    .site-footer {
+        padding: 30px 20px;
+    }
+    .sftext-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+    .sftext-2 {
+        font-size: 16px;
+    }
+}

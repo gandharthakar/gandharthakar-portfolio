@@ -2145,6 +2145,7 @@ body {
 }
 .contact-dtlcont::after {
   content: "";
+  display: none;
   position: absolute;
   right: 0px;
   top: 0px;

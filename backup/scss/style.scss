@@ -1,0 +1,39 @@
+@import "./base_partial";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Site Common Things. */
+
+// Import Common Styles
+@import './common/common';
+
+// Import Header
+@import './common/header';
+
+// Import Footer
+@import './common/footer';
+
+/* ---- All Sections ---- */
+
+// Import Home Banner
+@import './sections/home-banner';
+
+// Import About Me Section
+@import './sections/about-me-section';
+
+// Import My Skills Section
+@import './sections/my-skills-section';
+
+// Import My Work Section
+@import './sections/my-work-section';
+
+// Import Contact Me Section
+@import './sections/contact-me-section';
